@@ -1,0 +1,298 @@
+#menu-demo2,
+#menu-demo2 ul {
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+#menu-demo2 {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 60px;
+}
+
+#menu-demo2 li {
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    margin-left: 5px;
+}
+
+#menu-demo2 ul li {
+    display: inherit;
+    border-radius: 0;
+}
+
+#menu-demo2 ul li:hover {
+    border-radius: 0;
+}
+
+#menu-demo2 ul li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+#menu-demo2 ul {
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+
+#menu-demo2 li:hover ul {
+    max-height: 15em;
+}
+
+/* background des liens menus */
+#menu-demo2 li:first-child {
+    background-color: #7A7A7A;
+    background-image: -webkit-linear-gradient(top, #7a7a7a 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #7a7a7a 0%, #333A40 100%);
+}
+
+#menu-demo2 li:nth-child(2) {
+    background-color: #7A7A7A;
+    background-image: -webkit-linear-gradient(top, #7a7a7a 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #7a7a7a 0%, #333A40 100%);
+}
+
+#menu-demo2 li:nth-child(3) {
+    background-color: #7A7A7A;
+    background-image: -webkit-linear-gradient(top, #7a7a7a 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #7a7a7a 0%, #333A40 100%);
+}
+
+#menu-demo2 li:nth-child(4) {
+    background-color: #7A7A7A;
+    background-image: -webkit-linear-gradient(top, #7a7a7a 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #7a7a7a 0%, #333A40 100%);
+}
+
+#menu-demo2 li:last-child {
+    background-color: #7A7A7A;
+    background-image: -webkit-linear-gradient(top, #7a7a7a 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #7a7a7a 0%, #333A40 100%);
+}
+
+/* background des liens sous menus */
+#menu-demo2 li:first-child li {
+    background: #333A40;
+}
+
+#menu-demo2 li:nth-child(2) li {
+    background: #333A40;
+}
+
+#menu-demo2 li:nth-child(3) li {
+    background: #333A40;
+}
+
+#menu-demo2 li:nth-child(4) li {
+    background: #333A40;
+}
+
+#menu-demo2 li:last-child li {
+    background: #333A40;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover,
+#menu-demo2 li:first-child li:hover {
+    background: #729EBF;
+}
+
+#menu-demo2 li:nth-child(2):hover,
+#menu-demo2 li:nth-child(2) li:hover {
+    background: #729EBF;
+}
+
+#menu-demo2 li:nth-child(3):hover,
+#menu-demo2 li:nth-child(3) li:hover {
+    background: #729EBF;
+}
+
+#menu-demo2 li:nth-child(4):hover,
+#menu-demo2 li:nth-child(4) li:hover {
+    background: #729EBF;
+}
+
+#menu-demo2 li:last-child:hover,
+#menu-demo2 li:last-child li:hover {
+    background: #729EBF;
+}
+
+/* les a href */
+#menu-demo2 a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 32px;
+    color: #fff;
+}
+
+#menu-demo2 ul a {
+    padding: 8px 0;
+}
+
+#menu-demo2 li:hover li a {
+    color: #fff;
+    text-transform: inherit;
+}
+
+#menu-demo2 li:hover a,
+#menu-demo2 li li:hover a {
+    color: #000;
+}
+
+
+
+body {
+    background-color: #eeeeee;
+    font-family: 'MaPolice';
+}
+
+header {
+    height: 100vh;
+    background-image: url(Image/Paysage/DSC07063.jpg);
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.marg {
+    position: absolute;
+    left: 15px;
+}
+
+.marg2 {
+    margin-right: 70px;
+
+}
+
+h1 {
+    font-size:7ex;
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+@media screen and (max-width : 730px) {
+    h1 {
+        font-size:6ex;
+        position: absolute;
+        top: 35vh;
+        text-align: center;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    h1 {
+        font-size:5ex;
+        position: absolute;
+        top: 35vh;
+        text-align: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+
+main {
+    height: 100vh;
+}
+
+
+
+.taille {
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+}
+
+
+nav {
+    background-color: #9d9d9d;
+    height: 100px;
+    border-bottom-color: #ffeeee;
+    box-shadow: 0 0 0.6em #3331ff;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+ul {
+    object-position: bottom;
+}
+
+main img {
+    align-content: center;
+}
+
+.carousel {
+    width: 640px;
+    height: 360px;
+    margin: 0 auto;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.cd-fixed-bg__content, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.cd-fixed-bg.cd-fixed-bg--1 {
+  background-image: url("../img/cd-background-1.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--2 {
+  background-image: url("../img/cd-background-2.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--3 {
+  background-image: url("../img/cd-background-3.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--4 {
+  background-image: url("../img/cd-background-4.jpg");
+}
+
+@font-face {
+    font-family: 'MaPolice';
+    src: url('police/Quicksand-Light.otf');
+}
